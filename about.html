@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Website</title>
+    <link rel="icon" type="image/png" href="Image/A-icon.png">
+    <link rel="stylesheet" href="about-style.css" />
+    <script src="https://kit.fontawesome.com/af7cab36be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Angel</h1>
+                <ul id="sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/user.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="discription">Angel Margarette Belen is an Accountancy student at National University
+                            Laguna who strives for academic excellence and continuous growth in the field of business
+                            and finance. She is passionate about learning accounting principles, financial reporting,
+                            and auditing, and is dedicated to developing strong analytical and critical-thinking skills.
+                            Angel aims to apply her knowledge to real-world situations and prepare for a successful
+                            career as a Certified Public Accountant. She values integrity, discipline, and hard work as
+                            the foundation of her studies and future profession.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Accounting Skills</span><br>Financial Accounting and Reporting</li>
+                                <li><span>Analytical Tools</span><br>Microsoft Excel, Google Sheets, QuickBooks, SAP
+                                    (Basic Knowledge)
+                                </li>
+                                <li><span>Soft Skills</span><br>Attention to Detail, Critical Thinking, Time Management,
+                                    Team Collaboration</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Accounting Simulation Activities</span><br>Prepared journal entries and
+                                    trial
+                                    balances<br>Assisted in financial statement preparation and analysis<br>
+                                    Practiced ethical accounting procedures and data confidentiality<br>Managed and
+                                    recorded class funds accurately<br>Produced simple financial reports and handled
+                                    reimbursements</li>
+                                <li><span> </span><br> </li>
+                                <li><span> </span><br> </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Primary Education</span><br>National University Laguna</li>
+                                <li><span>Lower and Upper Secondary Education</span><br>National University Laguna
+                                </li>
+                                <li><span>Tertiary Education</span><br>National University Laguna<p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- THEME TOGGLE BUTTON -->
+    <div class="floating-sidebar">
+        <button id="theme-toggle" title="Toggle light/dark mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
